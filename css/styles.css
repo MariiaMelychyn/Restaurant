@@ -1,0 +1,23 @@
+@import url('./reset.css');
+@import url('./header.css');
+/* @import url('./hero.css'); */
+
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    /* var() основні 3 кольори до макету  */
+    --black: #111111;
+    --dark-fiolet: #1e1823;
+    --orange: #fd9222;
+  
+    --color: #111111;
+    --background-color: #FAFAFA;
+    --font-synthesis: none;
+    --text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }

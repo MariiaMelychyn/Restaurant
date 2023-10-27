@@ -1,0 +1,206 @@
+.how-its-made-main-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--black);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-bottom: 32px;
+    padding-top: 72px;
+}
+
+.how-its-made-main-title span {
+    color: var(--orange);
+}
+
+.how-its-made-udervideo-content {
+    background: white;
+    border-radius: 15px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+    padding: 20px 14px;
+}
+
+.how-its-made-udervideo-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--black);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-bottom: 20px;
+}
+
+
+
+.how-its-made-udervideo-descr {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color: var(--black);
+    padding-left: 14px;
+}
+
+.how-its-made-udervideo-descr li {
+    position: relative;
+}
+
+.how-its-made-udervideo-descr li::before {
+    content: "";
+    background: #4C4C4C;
+    border: 1px solid #ECEDED;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 2rem;
+    color: white;
+    text-align: center;
+    margin-right: 0.5rem;
+    padding-right: 7px;
+    position: absolute;
+    top: 5px;
+    left: -16px;
+}
+
+.how-its-made-udervideo-descr>li:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.how-its-made-content {
+    padding-bottom: 72px;
+}
+
+.how-its-made-video {
+    border-radius: 15px;
+    width: 100%;
+    height: 500px;
+    background: url(/img/howitsmade/mobile-video-bcground.jpg);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.video-play {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+}
+.is-hidden-how-its-made {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+/* iframe:active {
+    display: block;
+}
+
+.how-its-made-video:hover iframe{
+    display: block;
+} */
+
+
+@media screen and (min-width: 768px) {
+    .how-its-made-udervideo-content {
+        width: 614px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 32px;
+    }
+
+    .video-play {
+        width: 44px;
+        height: 44px;
+    }
+
+
+    .how-its-made-udervideo-title {
+        width: 350px;
+        margin-bottom: 28px;
+    }
+
+    .how-its-made-udervideo-descr li {
+        width: 464px;
+    }
+
+    .how-its-made-main-title {
+        margin-bottom: 50px;
+        padding-top: 100px;
+    }
+    .how-its-made-content {
+        padding-bottom: 100px;
+    }
+
+    .how-its-made-video {
+        width: 614px;
+        height: 400px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+        display: flex;
+    
+        background: url(/img/howitsmade/tablet-video-bcground.jpg);
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .how-its-made-video {
+        width: 600px;
+        height: 400px;
+        display: flex;
+        margin-right: 20px;
+        margin-left: 0;
+        background: url(/img/howitsmade/decstop-video-bcground.jpg);
+    }
+
+    .how-its-made-udervideo-content {
+        width: 516px;
+        padding: 32px;
+        margin-right: 0;
+        margin-left: 0;
+        height: 400px;
+    }
+    .how-its-made-content {
+        padding-bottom: 128px;
+        display: flex;
+    }
+
+    .how-its-made-udervideo-descr>li:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .how-its-made-udervideo-descr li {
+        width: 425px;
+    }
+
+    .how-its-made-main-title {
+        padding-top: 0;
+    }
+    .how-its-made-video {
+        margin-bottom: 0;
+    }
+  }

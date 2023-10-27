@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link
+      rel="stylesheet"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="home" class="header">
+      <div class="container header-container">
+        <nav class="header-navigation">
+          <a class="" href="./index.html">
+            <img src="./img/logo.svg" alt="bbq" width="50" height="50" />
+          </a>
+          <ul class="header-list list">
+            <li class="header-item">
+              <a class="header-link link active" href="#home">Home</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="./">About</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="./">Menu</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="./">Gallery</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="./">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <ul class="header-social-list list">
+            <li class="header-social-item">
+              <a
+                href="tel:+1(555)7788999"
+                class="header-social-link link"
+                target="_blank"
+              >
+                <svg class="header-social-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-telephone-svgrepo-com"></use>
+                </svg>
+                <p class="nav-text">Us +1(555)77 88 999</p>
+              </a>
+            </li>
+            <li class="header-social-item">
+              <a
+                href="https://www.google.com/maps?q=770+East+Linden+Street,+New+York"
+                class="header-social-link link"
+                target="_blank"
+              >
+                <svg class="header-social-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-location-svgrepo-com"></use>
+                </svg>
+                <p class="nav-text">Q 770 East Li nden Street New York</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          type="button"
+          class="menu-hamburger js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-hamburger" width="28" height="28">
+            <use
+              class="icon-hamburger"
+              href="./img/icons.svg#icon-menu-icon"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="mobile js-menu-container" id="mobile-menu">
+          <svg class="icon-modal-btn js-close-menu">
+            <use href="./img/icons.svg#icon-сlose-icon-converted"></use>
+          </svg>
+          <nav class="header-nav">
+            <ul class="header-list-mobile list">
+              <li class="header-item">
+                <a class="header-link active link" href="#home">Home</a>
+              </li>
+              <li class="header-item">
+                <a class="header-link link" href="./">About</a>
+              </li>
+              <li class="header-item">
+                <a class="header-link link" href="./">Menu</a>
+              </li>
+              <li class="header-item">
+                <a class="header-link link" href="./">Gallery</a>
+              </li>
+              <li class="header-item">
+                <a class="header-link link" href="./">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div>
+            <ul class="header-social-list-mob list">
+              <li class="header-social-item-mob">
+                <a
+                  href="https://www.instagram.com"
+                  class="header-social-link-mob link"
+                  target="_blank"
+                >
+                  <svg class="header-social-icon-mob" width="22" height="22">
+                    <use href="./img/icons.svg#icon-location-svgrepo-com"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-social-item-mob">
+                <a
+                  href="https://www.twitter.com"
+                  class="header-social-link-mob link"
+                  target="_blank"
+                >
+                  <svg class="header-social-icon-mob" width="22" height="22">
+                    <use href="./img/icons.svg#icon-twitter-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="how-its-made-content">
+            <div data-modal-open-how-its-made class="how-its-made-video">
+              <svg class="video-play">
+                <use href="./img/icons.svg#icon-play"></use>
+              </svg>
+              <iframe
+                data-modal-how-its-made
+                src="https://www.youtube.com/embed/VnvG08masio"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                class="is-hidden-how-its-made"
+              ></iframe>
+            </div>
+            <div class="how-its-made-udervideo-content">
+              <div class="onion">
+                <ul class="onion-ul">
+                  <li class="garlic">
+                    <img src="./img/onion.png" alt="onion" />
+                  </li>
+                  <li><img src="./img/tomato.png" alt="tomato" /></li>
+                  <li class="garlic">
+                    <img src="./img/garlic.png" alt="garlic" />
+                  </li>
+                </ul>
+                <h2 class="how-its-made-main-title" id="how-its-made">
+                  ABOUT US
+                </h2>
+              </div>
+              <p class="how-its-made">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+              </p>
+              <ul class="how-its-made-udervideo-descr">
+                <li class="how-its">
+                  <svg class="" width="60" height="60">
+                    <use href="./img/icons.svg#icon-grill-svgrepo-com"></use>
+                  </svg>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et.
+                  </p>
+                </li>
+                <li class="how-its">
+                  <svg class="" width="60" height="60">
+                    <use href="./img/icons.svg#icon-grill-svgrepo-com"></use>
+                  </svg>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et.
+                  </p>
+                </li>
+                <li class="how-its">
+                  <svg class="" width="60" height="60">
+                    <use href="./img/icons.svg#icon-grill-svgrepo-com"></use>
+                  </svg>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#footer" class="contact"> Contact Us </a>
+        </div>
+      </section>
+      <section class="map">
+        <div id="googleMap" style="height: 400px; width: 100%"></div>
+      </section>
+    </main>
+    <footer class="footer-color" id="footer">
+      <div class="container cont-footer">
+        <div class="footer-item-abovetheline">
+          <div class="footer-block">
+            <img src="./img/logo.svg" alt="bbq" width="100" height="100" />
+            <h2 class="footer-title">
+              THE BEST BARBECUE <br />
+              IN THE KNOWN UNIVERSE
+            </h2>
+          </div>
+          <div>
+            <ul class="header-social-list-footer list">
+              <li class="header-social-item">
+                <a
+                  href="tel:+1(555)7788999"
+                  class="header-social-link link"
+                  target="_blank"
+                >
+                  <svg class="header-social-icon" width="24" height="24">
+                    <use
+                      href="./img/icons.svg#icon-telephone-svgrepo-com"
+                    ></use>
+                  </svg>
+                  <p class="nav-text">Us +1(555)77 88 999</p>
+                </a>
+              </li>
+              <li class="header-social-item">
+                <a
+                  href="https://www.google.com/maps?q=770+East+Linden+Street,+New+York"
+                  class="header-social-link link"
+                  target="_blank"
+                >
+                  <svg class="header-social-icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-location-svgrepo-com"></use>
+                  </svg>
+                  <p class="nav-text">Q 770 East Li nden Street New York</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <ul class="footer-social-media">
+              <li class="footer-socil-item">
+                <a
+                  href="https://www.instagram.com/"
+                  class="footer-social-link"
+                  target="_blank"
+                >
+                  <svg class="social-media-icon">
+                    <use
+                      href="./img/svg/icons.svg#icon-instagram-icon-mobile"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-socil-item">
+                <a
+                  href="https://twitter.com/"
+                  class="footer-social-link"
+                  target="_blank"
+                >
+                  <svg class="social-media-icon">
+                    <use href="./img/svg/icons.svg#icon-twitter-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="header-social-list-mob list">
+              <li class="header-social-item-mob">
+                <a
+                  href="https://www.instagram.com"
+                  class="header-social-link-mob link"
+                  target="_blank"
+                >
+                  <svg
+                    class="header-social-icon-mob-footer"
+                    width="40"
+                    height="40"
+                  >
+                    <use
+                      href="./img/icons.svg#icon-instagram-icon-mobile"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="header-social-item-mob">
+                <a
+                  href="https://www.facebook.com/home.php"
+                  class="header-social-link-mob link"
+                  target="_blank"
+                >
+                  <svg
+                    class="header-social-icon-mob-footer"
+                    width="40"
+                    height="40"
+                  >
+                    <use href="./img/icons.svg#icon-facebook-svgrepo-com"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-social-item-mob">
+                <a
+                  href="https://www.twitter.com"
+                  class="header-social-link-mob link"
+                  target="_blank"
+                >
+                  <svg
+                    class="header-social-icon-mob-footer"
+                    width="40"
+                    height="40"
+                  >
+                    <use href="./img/icons.svg#icon-twitter-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="footer-line" />
+        <div>
+          <ul class="footer-nav-list">
+            <li class="footer-nav-link">
+              <a href="#home" class="active">Home</a>
+            </li>
+            <li class="footer-nav-link">
+              <a class="header-link" href="/">About</a>
+            </li>
+            <li class="footer-nav-link">
+              <a class="header-link" href="#">Menu</a>
+            </li>
+            <li class="footer-nav-link">
+              <a class="header-link" href="#">Gallery</a>
+            </li>
+            <li class="footer-nav-link">
+              <a class="header-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <img src="./img/meat.png" alt="meat" />
+        </div>
+      </div>
+      <p class="designed">
+        Designed by Raptormedia.co &copy; 2022 All Rights Reserved.
+      </p>
+    </footer>
+
+    <script src="./js/modal.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlQjkQcleuyhVjb5gowgzPYpfyBJQr3tM&callback=initMap"
+      async
+      defer
+    ></script>
+    <script src="./js/map.js"></script>
+  </body>
+</html>
